@@ -5,8 +5,8 @@ class Port extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
-          <h1>Port of Gold Beach</h1>
           <article>
+            <h2>Port of Gold Beach</h2>
             <p>
               The Port of Gold Beach is for tourists, for residents, and for commercial fishermen. Highway 101 can be
               seen running along the top of the image. The entrance through the breakwater from the Rogue River is off

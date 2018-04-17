@@ -1,0 +1,95 @@
+// _mobile.scss
+
+/**************** HTML and BODY ******************/
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  font-family: $font-stack;
+  color: $primary-color;
+  min-height: 100%;
+}
+/**************** Header ******************/
+header {
+  align-items: center;
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  height: 11.5em;
+  color: white;
+  p {
+    text-align: center;
+    img {
+      width: auto;
+      height: 6em;
+    }
+  }
+  nav {
+    min-height: 3.5em;
+
+    ul {
+      width: 100%;
+      text-align: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        background-color: #222;
+        width: 100%;
+        height: 3.5em;
+        line-height: 3.5em;
+        display: none;
+        border-top: 1px solid #555;
+
+        &#nav-menu-button {
+          display: inline-block;
+        }
+        a,
+        :visited,
+        :hover {
+          color: white;
+          text-decoration: none;
+        }
+        &.active {
+          display: inline-block;
+        }
+        div.nav-icon-wrapper {
+          padding: 1em 0;
+          width: 100%;
+          background-color: gold;
+          border: 1px solid black;
+        }
+        &.subNav-Mobile {
+        }
+        span {
+          position: absolute;
+          right: 10%;
+          font-size: 125%;
+        }
+      } /* end li */
+    }
+  }
+  div.nav-icon {
+    width: 2em;
+    height: 0.25em;
+    background-color: white;
+    margin: 0.3em auto;
+  }
+}
+#secondNav {
+  display: none;
+}
+
+/**************** Main Content ******************/
+#wrapper {
+  padding-top: 15em;
+  padding-bottom: 6em;
+}
+
+section {
+  padding: 0 5%;
+}
