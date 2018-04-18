@@ -4,40 +4,141 @@
 @import 'config';
 @import 'mobile';
 
-/**************** Tablet 768 - 992 px ***********/
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+/**************** Tablet 768 px ***********/
+@media only screen and (min-width: 768px) {
 }
 
-/**************** Medium Device 993 - 1200 px ***********/
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
+/**************** Medium Device 993px***********/
+@media only screen and (min-width: 993px) {
   header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: $header-height;
+    p {
+      width: auto;
+      img {
+        padding: 0 1em;
+        width: auto;
+        height: $header-height;
+      }
+    }
     nav {
+      position: absolute;
+      right: 1em;
+      min-height: $header-height;
       ul {
-        display: inline-block;
-        width: 30%;
+        margin: 0;
+        padding: 0;
         li {
           display: inline-block;
+          width: auto;
+          padding: 0 0 0 1em;
+          margin: 0;
+          border: none;
+          height: $header-height;
+          line-height: $header-height;
           span {
             display: none;
           }
           &#nav-menu-button {
             display: none;
-            background-color: red;
           }
           div.nav-icon-wrapper {
+            display: none;
+          }
+          &.subNav-Mobile {
             display: none;
           }
         }
       }
     }
   }
+  #secondNav {
+    background-color: $port-gold;
+    margin-top: $header-height;
+    min-height: 1em;
+    line-height: 2em;
+    max-height: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 0 5px 30px #222;
+    position: fixed;
+    ul {
+      li {
+        display: inline-block;
+        padding-right: 1em;
+        font-size: 0.8em;
+        a:link,
+        a:visited {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  /*     Main Content      */
+  #wrapper {
+    padding-top: $header-height;
+
+    h2 {
+      padding-top: 5em;
+    }
+
+    section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      article {
+        width: 100%;
+        &.col-3 {
+          width: 25%;
+          margin: 0 auto;
+          padding: 0 2em;
+          h2 {
+            margin: 0;
+            padding-top: 0;
+            font-size: 1.25em;
+          }
+        }
+
+        &.col-2 {
+          width: 45%;
+          margin: 0 auto;
+          h2 {
+            font-size: 1.25em;
+          }
+        }
+        &#landing {
+          width: 100vw;
+          height: 90vh;
+          padding: 0;
+          margin: 0;
+          display: inline-block;
+          img {
+            width: 100vw;
+            height: 90vh;
+          }
+        }
+        &.contact {
+          p:not(first-child) {
+            padding: 0;
+            margin: 0;
+          }
+        }
+      } // end article
+    }
+  }
 }
+// End device 993 - 1200
 
 /**************** Tablet greater than 1201px ***********/
 @media only screen and (min-width: 1201px) {
-  body {
-    background-color: red;
-  }
 }
 
 /**************** Skip navigation ****************/

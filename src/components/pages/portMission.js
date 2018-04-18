@@ -5,7 +5,6 @@ class Portmission extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
-          <h1>Mission</h1>
           <article>
             <h2>The Mission of the Port of Gold Beach is to:</h2>
             <ul>

@@ -33,8 +33,8 @@ class App extends Component {
         <div className="App">
           <Header />
           <Switch>
-            {/* <Route exact path="/port_business*" component={Portbusinessheader} />
-            <Route exact path="/port*" component={Portheader} /> */}
+            <Route exact path="/port_business*" component={Portbusinessheader} />
+            <Route exact path="/port*" component={Portheader} />
             <Route exact path="/*" component={Blanksecondheader} />
           </Switch>
           <Route exact path="/" component={Homepage} />
@@ -47,7 +47,7 @@ class App extends Component {
           <Route exact path="/Port_Business/Resolutions" component={Resolutions} />
           <Route exact path="/Port_Business/Strategic_Plan" component={Strategicplan} />
           <Route exact path="/Port" component={Port} />
-          <Route exact path="/Port/History" component={Porthistory} />
+          <Route exact path="/History" component={Porthistory} />
           <Route exact path="/Port/Commercial_Facilities" component={Commercialfacilities} />
           <Route exact path="/Port/Mission" component={Portmission} />
           <Route exact path="/Port/Services" component={Portservices} />

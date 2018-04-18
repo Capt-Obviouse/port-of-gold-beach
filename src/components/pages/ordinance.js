@@ -5,8 +5,8 @@ class Ordinance extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
-          <h1>Port Ordinance</h1>
           <article>
+            <h2>Port Ordinance</h2>
             <p>
               <a href="http://portofgoldbeach.com/_2009_Downloads_pdf/Ordinance_1-09.pdf" taget="_blank">
                 Port of Gold Beach- Ordinance 1-09

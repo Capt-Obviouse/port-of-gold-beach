@@ -165,7 +165,7 @@ class Header extends Component {
               </Link>
             </li>
             <li className="mainNavItem">
-              <Link to="/Port/History" onClick={this.menuToggle.bind(this)}>
+              <Link to="/History" onClick={this.menuToggle.bind(this)}>
                 History
               </Link>
             </li>

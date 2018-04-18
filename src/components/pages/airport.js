@@ -5,8 +5,8 @@ class Airport extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
-          <h1>Airport</h1>
           <article>
+            <h2>Airport</h2>
             <p>
               One of the most beautiful airports on the entire west coast, the Gold Beach Airport is located just south
               of the mouth of the Rogue River. The airport is managed by the Port of Gold Beach. Terminal and fuel hours

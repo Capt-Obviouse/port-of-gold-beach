@@ -5,8 +5,8 @@ class Porthistory extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
-          <h2>History of the Port of Gold Beach</h2>
           <article>
+            <h2>History of the Port of Gold Beach</h2>
             <ul>
               <li>6,600 B.C.: The earliest record of human habitation at the mouth of the Rogue River.</li>
               <li>1542-43: The earliest approaches to the Southern Oregon Coast by the Spanish.</li>

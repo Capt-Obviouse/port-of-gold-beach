@@ -5,7 +5,7 @@ class Portbusinessheader extends Component {
   render() {
     return (
       <div id="secondNav">
-        <ul>
+        <ul className="subNav">
           <li>
             <Link to="/Port_Business/Ordinance">Ordinance</Link>
           </li>

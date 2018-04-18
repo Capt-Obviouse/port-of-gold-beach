@@ -5,8 +5,8 @@ class Portservices extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
-          <h1>Services</h1>
           <article>
+            <h2>Services</h2>
             The Port of Gold Beach Staff is available to assist you when needed. Services and equipment include: Storage
             Marine Fuel Forklift Contact the Port Office to arrange for services and/or equipment.
           </article>

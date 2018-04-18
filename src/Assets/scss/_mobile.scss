@@ -88,8 +88,12 @@ header {
 #wrapper {
   padding-top: 15em;
   padding-bottom: 6em;
-}
-
-section {
-  padding: 0 5%;
+  section {
+    padding: 0 5% 2%;
+    article {
+      &#landing {
+        display: none;
+      }
+    }
+  }
 }
