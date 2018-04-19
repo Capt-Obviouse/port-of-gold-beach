@@ -5,8 +5,8 @@ class Huntleypark extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
+          <h1>Huntley Park</h1>
           <article>
-            <h2>Huntley Park</h2>
             Visit lovely Huntley Park Riverside Campground and R.V. Park. Located 7 miles east of Gold Beach on the bank
             of the beautiful Rogue River. Easily accessed by way of Jerry&#8217;s Flat (South Bank) Road, the park
             offers 70 secluded &#8217;dry&#8217; camp sites with tables and fire rings. Firewood is available for a

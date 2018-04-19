@@ -5,8 +5,8 @@ class Commercialfacilities extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
+          <h1>Commercial Facilities</h1>
           <article>
-            <h2>Commercial Facilities</h2>
             The Port of Gold Beach manages several commercial facilities. The prime commercial location at this time is
             the Cannery Building. Ocean view space is available upstairs. Build-out can be done for qualified tenants.
             Contact the Port of Gold Beach office to discuss details.

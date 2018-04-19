@@ -5,8 +5,8 @@ class Portbusiness extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
+          <h1>Port Business</h1>
           <article>
-            <h2>Port Business</h2>
             The Port of Gold Beach is entrusted with certain public assets, taxes and authorities to be used for the
             good of the community.
           </article>

@@ -5,15 +5,16 @@ class Contact extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
-          <article className="col-2">
-            <h2>Contact</h2>
+          <h1>Contact</h1>
+          <article>
+            <h2>Administration - Port Office</h2>
             <p>
               The Port Office is open Monday thru Friday 8 am until 5 pm. We welcome your visit! Contact the Port Office
               at 541-247-6269 or by email: portoffice@portofgoldbeach.com or visit us in person to conduct your port
               business or make inquires.
             </p>
           </article>
-          <article className="col-2 contact">
+          <article>
             <h2>Port of Gold Beach</h2>
             <p>Port of Gold Beach</p>
             <p>29891 Harbor Way</p>

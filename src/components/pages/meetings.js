@@ -5,8 +5,9 @@ class Meetings extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
+          <h1>Meetings 2018</h1>
+
           <article>
-            <h2>Meetings 2018</h2>
             <ul>
               <li>
                 <a
