@@ -5,8 +5,9 @@ class Strategicplan extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
+          <h1>Strategic Plan</h1>
+
           <article>
-            <h2>Strategic Plan</h2>
             <p>
               The strategic issues, objectives, and strategies presented in this Strategic Business Plan are the
               critical few that significantly impact the ability of the Port of Gold Beach to achieve its mission, or

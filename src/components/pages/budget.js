@@ -5,8 +5,9 @@ class Budget extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
+          <h1>Budget</h1>
+
           <article>
-            <h2>Budget</h2>
             <ul>
               <li>
                 <a

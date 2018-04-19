@@ -5,6 +5,7 @@ class Resolutions extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
+          <h1>Resolutions</h1>
           <article>
             <h2>Resolution 2017-02</h2>
             <p>
@@ -18,48 +19,42 @@ class Resolutions extends Component {
               below are hereby appropriated:
             </p>
             <table className="resolutions">
-              <thead>
-                <tr>
-                  <th>General Fund</th>
-                  <th>Budget</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Personal Services</td>
-                  <td>$313,060</td>
-                </tr>
-                <tr>
-                  <td>Materials & Services</td>
-                  <td>$330,190</td>
-                </tr>
-                <tr>
-                  <td>Capital Outlay</td>
-                  <td>$87,500</td>
-                </tr>
-                <tr>
-                  <td>Debt Service</td>
-                  <td>$48,714</td>
-                </tr>
-                <tr>
-                  <td>Transfers</td>
-                  <td>$25,000</td>
-                </tr>
-                <tr>
-                  <td>Contingency</td>
-                  <td>$25,000</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td>Total</td>
-                  <td>$829,464</td>
-                </tr>
-              </tfoot>
+              <tr>
+                <th>General Fund</th>
+                <th>Budget</th>
+              </tr>
+              <tr>
+                <td>Personal Services</td>
+                <td>$313,060</td>
+              </tr>
+              <tr>
+                <td>Materials & Services</td>
+                <td>$330,190</td>
+              </tr>
+              <tr>
+                <td>Capital Outlay</td>
+                <td>$87,500</td>
+              </tr>
+              <tr>
+                <td>Debt Service</td>
+                <td>$48,714</td>
+              </tr>
+              <tr>
+                <td>Transfers</td>
+                <td>$25,000</td>
+              </tr>
+              <tr>
+                <td>Contingency</td>
+                <td>$25,000</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td>$829,464</td>
+              </tr>
             </table>
           </article>
         </section>

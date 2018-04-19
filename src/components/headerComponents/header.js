@@ -10,15 +10,17 @@ class Header extends Component {
         for (var i = 0; i < NavID.length; i++) {
           NavID[i].classList.add('active');
         }
+        //  PortID.classList.toggle('active');
         this.portNavToggle('close');
         break;
       case 'close':
-        for (i = 0; i < NavID.length; i++) {
+        for (var i = 0; i < NavID.length; i++) {
           NavID[i].classList.remove('active');
         }
+        //  PortID.classList.toggle('active');
         break;
       default:
-        for (i = 0; i < NavID.length; i++) {
+        for (var i = 0; i < NavID.length; i++) {
           NavID[i].classList.toggle('active');
         }
         break;
@@ -51,12 +53,12 @@ class Header extends Component {
         break;
 
       case 'close':
-        for (i = 0; i < PortSubNavID.length; i++) {
+        for (var i = 0; i < PortSubNavID.length; i++) {
           PortSubNavID[i].classList.remove('active');
         }
         break;
       default:
-        for (i = 0; i < PortSubNavID.length; i++) {
+        for (var i = 0; i < PortSubNavID.length; i++) {
           PortSubNavID[i].classList.toggle('active');
         }
         break;
@@ -72,18 +74,21 @@ class Header extends Component {
         break;
 
       case 'close':
-        for (i = 0; i < PortBusinessSubNavID.length; i++) {
+        for (var i = 0; i < PortBusinessSubNavID.length; i++) {
           PortBusinessSubNavID[i].classList.remove('active');
         }
         break;
       default:
-        for (i = 0; i < PortBusinessSubNavID.length; i++) {
+        for (var i = 0; i < PortBusinessSubNavID.length; i++) {
           PortBusinessSubNavID[i].classList.toggle('active');
         }
         break;
     }
   }
   NavToggle(classToggle) {
+    const NavID = document.getElementsByClassName('mainNavItem');
+    const PortBusinessSubNavID = document.getElementsByClassName('port-business');
+
     switch (classToggle) {
       case 'port':
         this.portNavToggle();
@@ -123,7 +128,9 @@ class Header extends Component {
                 Port
               </Link>
               <span className="port">
-                <a onClick={this.NavToggle.bind(this, 'port')}>+</a>
+                <a href="#" onClick={this.NavToggle.bind(this, 'port')}>
+                  +
+                </a>
               </span>
             </li>
             <li className="subNav-Mobile port">
@@ -131,7 +138,9 @@ class Header extends Component {
                 Port
               </Link>
               <span className="port">
-                <a onClick={this.NavToggle.bind(this, 'port')}>-</a>
+                <a href="#" onClick={this.NavToggle.bind(this, 'port')}>
+                  -
+                </a>
               </span>
             </li>
             <li className="subNav-Mobile port">
@@ -165,7 +174,7 @@ class Header extends Component {
               </Link>
             </li>
             <li className="mainNavItem">
-              <Link to="/History" onClick={this.menuToggle.bind(this)}>
+              <Link to="/Port/History" onClick={this.menuToggle.bind(this)}>
                 History
               </Link>
             </li>
@@ -174,7 +183,9 @@ class Header extends Component {
                 Port Business
               </Link>
               <span className="port-business">
-                <a onClick={this.NavToggle.bind(this, 'port-business')}>+</a>
+                <a href="#" onClick={this.NavToggle.bind(this, 'port-business')}>
+                  +
+                </a>
               </span>
             </li>
             <li className="subNav-Mobile port-business">
@@ -182,7 +193,9 @@ class Header extends Component {
                 Port Business
               </Link>
               <span className="port-business">
-                <a onClick={this.NavToggle.bind(this, 'port-business')}>-</a>
+                <a href="#" onClick={this.NavToggle.bind(this, 'port-business')}>
+                  -
+                </a>
               </span>
             </li>
             <li className="subNav-Mobile port-business">
@@ -221,7 +234,7 @@ class Header extends Component {
               </Link>
             </li>
             <li id="nav-menu-button">
-              <a onClick={this.menuToggle.bind(this)}>
+              <a href="#" onClick={this.menuToggle.bind(this)}>
                 <div className="nav-icon-wrapper">
                   <div className="nav-icon"> </div>
                   <div className="nav-icon"> </div>

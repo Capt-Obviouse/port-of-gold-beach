@@ -5,8 +5,8 @@ class Airportplan extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
+          <h1>Airport Master Plan Update PAC Meetings & Documents</h1>
           <article>
-            <h2>Airport Master Plan Update PAC Meetings & Documents</h2>
             <p>
               The mission of the Planning Advisory Committee (PAC) is to advise Port staff and the Planning Team, led by
               WHPacific, Inc., on issues of community interest with respect to providing safe, efficient and convenient
