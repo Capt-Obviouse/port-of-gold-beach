@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import AirportView from '../../Assets/img/port_overview.jpg';
 
 class Airport extends Component {
   render() {
@@ -18,11 +17,15 @@ class Airport extends Component {
               experience the Rogue River at it&#36;s fullest. The Rogue River is rich with thrills and wildlife and the
               upriver jet boats are the best way to see it all - short of hiking or rafting/kayaking the river.
             </p>
-            <p className="pageTitleImage">
-              <img
-                className="pageTitleImage"
-                src={AirportView}
-                alt="Aerial view of the Port of Gold Beach and Airport"
+
+            <p className="airportVideo">
+              <iframe
+                width="854"
+                height="480"
+                src="https://www.youtube.com/embed/0pXsxz1W6gU"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
               />
             </p>
           </article>
