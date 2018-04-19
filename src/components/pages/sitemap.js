@@ -6,8 +6,8 @@ class Sitemap extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
-          <h1>Sitemap</h1>
           <article>
+            <h2>Sitemap</h2>
             <ul className="sitemap">
               <li>
                 <Link to="/" className="open">
@@ -28,9 +28,7 @@ class Sitemap extends Component {
                       <li>
                         <Link to="/Port/Commercial_Facilities">Commercial Facilities</Link>
                       </li>
-                      <li>
-                        <Link to="/Port/History">History</Link>
-                      </li>
+
                       <li>
                         <Link to="/Port/Mission">Mission</Link>
                       </li>
@@ -44,12 +42,20 @@ class Sitemap extends Component {
                           Real-time Flight Information
                         </a>
                       </li>
+                      <li>
+                        <a href="http://www.airnav.com/airport/4s1" rel="noopener noreferrer" target="_blank">
+                          Gold Beach Airport Information
+                        </a>
+                      </li>
                     </ul>
                   </li>
                   <li>
                     <Link to="/Huntley_Park/" className="open">
                       Huntley Park
                     </Link>
+                  </li>
+                  <li>
+                    <Link to="/History">History</Link>
                   </li>
                   <li>
                     <Link to="/Port_Business">Port Business</Link>
