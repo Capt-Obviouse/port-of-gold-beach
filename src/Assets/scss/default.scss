@@ -145,6 +145,12 @@
       height: auto;
     }
   }
+  .airportVideo {
+    text-align: center;
+    iframe {
+      width: 50%;
+    }
+  }
 } // End device 993 - 1200
 
 /**************** Tablet greater than 1201px ***********/
