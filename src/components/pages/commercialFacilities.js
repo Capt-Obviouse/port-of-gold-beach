@@ -11,6 +11,16 @@ class Commercialfacilities extends Component {
             the Cannery Building. Ocean view space is available upstairs. Build-out can be done for qualified tenants.
             Contact the Port of Gold Beach office to discuss details.
           </article>
+          <article>
+            <h2>Current Businesses</h2>
+            <ul>
+              <li>
+                <a href="http://portholecafe.com/" target="_new">
+                  Port Hole Cafe
+                </a>
+              </li>
+            </ul>
+          </article>
         </section>
       </div>
     );
