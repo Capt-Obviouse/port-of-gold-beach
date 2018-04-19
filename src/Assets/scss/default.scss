@@ -76,6 +76,10 @@
         a:visited {
           color: black;
           text-decoration: none;
+          font-weight: bold;
+        }
+        a:hover {
+          color: white;
         }
       }
     }
@@ -132,10 +136,16 @@
           }
         }
       } // end article
+    } // end section
+  } // end wrapper
+  &.pageTitleImage {
+    text-align: center;
+    img {
+      width: 50%;
+      height: auto;
     }
   }
-}
-// End device 993 - 1200
+} // End device 993 - 1200
 
 /**************** Tablet greater than 1201px ***********/
 @media only screen and (min-width: 1201px) {

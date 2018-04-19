@@ -8,7 +8,7 @@ class Homepage extends Component {
         <section>
           <article id="landing">
             <script>document.getElementById("wrapper").style.paddingTop = 0;</script>
-            <img src={LandingImg} alt="Aerial view of gold beach" />
+            <img src={LandingImg} alt="Aerial view of Gold Beach including the port and airport of Gold Beach" />
           </article>
         </section>
         <section id="contentstart">
