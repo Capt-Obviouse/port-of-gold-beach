@@ -15,6 +15,7 @@ class contactForm extends React.Component {
       MessageValid: false,
       formValid: false
     };
+    this.baseState = this.state;
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
@@ -44,6 +45,8 @@ class contactForm extends React.Component {
         '\n' +
         this.state.Message
     );
+    this.setState(this.baseState);
+    // this.getElementById('contactFform').reset();
     event.preventDefault();
   }
   validateField(fieldName, value) {
@@ -99,7 +102,7 @@ class contactForm extends React.Component {
         <div className="errorPannel">
           <FormErrors formErrors={this.state.formErrors} />
         </div>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} id="contactForm">
           <p>
             <label>
               Name:<br />
@@ -119,6 +122,7 @@ class contactForm extends React.Component {
                 type="Email"
                 name="Email"
                 placeholder="user@Email.com"
+                value={this.state.Email}
                 onChange={(this.handleChange = this.handleChange.bind(this))}
               />
             </label>
