@@ -29,7 +29,7 @@ import Blanksecondheader from './components/headerComponents/blankSecondHeader';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={'/~jduncan128/webproject/'}>
         <div className="App">
           <Header />
           <Switch>
