@@ -2,7 +2,7 @@
   "name": "react_template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bobbi.ivytech.edu/~jduncan128/react/build/",
+  "homepage": "https://bobbi.ivytech.edu/~jduncan128/webproject/",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-changed": "^3.2.0",
