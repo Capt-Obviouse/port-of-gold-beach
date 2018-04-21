@@ -1,5 +1,4 @@
 // _mobile.scss
-
 /**************** HTML and BODY ******************/
 html {
   height: 100%;
@@ -16,6 +15,7 @@ header {
   background-color: #222;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 50;
   height: 11.5em;
@@ -114,4 +114,36 @@ header {
   .errorPannel {
     background-color: red;
   }
+  table {
+    margin: 2em 0;
+    width: 100%;
+    tr:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    th,
+    td {
+      text-align: left;
+      padding-right: 15em;
+      width: 50%;
+      &:first-child {
+        width: 35%;
+      }
+    }
+  }
+} // end wrapper
+.pageTitleImage {
+  text-align: center;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.airportVideo {
+  text-align: center;
+  iframe {
+    width: 100%;
+  }
+}
+label {
+  min-width: 100%;
 }

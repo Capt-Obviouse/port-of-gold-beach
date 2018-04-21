@@ -25,6 +25,7 @@ import Huntleypark from './components/pages/huntleyPark';
 import Portheader from './components/headerComponents/portHeader';
 import Portbusinessheader from './components/headerComponents/portBusinessHeader';
 import Blanksecondheader from './components/headerComponents/blankSecondHeader';
+import Rentalcars from './components/pages/rentalCars';
 
 class App extends Component {
   render() {
@@ -52,6 +53,7 @@ class App extends Component {
           <Route exact path="/Port/Mission" component={Portmission} />
           <Route exact path="/Port/Services" component={Portservices} />
           <Route exact path="/Port/Storage" component={Portstorage} />
+          <Route exact path="/Port/Rental_Cars" component={Rentalcars} />
           <Route exact path="/Huntley_Park" component={Huntleypark} />
           <Route exact path="/Contact" component={Contact} />
           <Route exact path="/Airport" component={Airport} />
