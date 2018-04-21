@@ -20,6 +20,8 @@ class Airport extends Component {
 
             <p className="airportVideo">
               <iframe
+                name="youtubeIframe"
+                title="airport video"
                 width="854"
                 height="480"
                 src="https://www.youtube.com/embed/0pXsxz1W6gU"
