@@ -10,8 +10,8 @@ class Contact extends Component {
             <h2>Contact</h2>
             <p>
               The Port Office is open Monday thru Friday 8 am until 5 pm. We welcome your visit! Contact the Port Office
-              at 541-247-6269 or by email: portoffice@portofgoldbeach.com or visit us in person to conduct your port
-              business or make inquires.
+              at 541-247-6269, by email: portoffice@portofgoldbeach.com, fill out the form bleow, or visit us in person
+              to conduct your port business or make inquires.
             </p>
           </article>
           <article className="col-2 contact">

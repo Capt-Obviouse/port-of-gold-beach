@@ -5,6 +5,16 @@ $font-stack: Verdana, sans-serif;
 $primary-color: black;
 $header-height: 4em;
 $port-gold: gold;
+/************** reset styles *************/
+
+html,
+body,
+ol,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
 
 /**************** HTML and BODY ******************/
 html {

@@ -20,19 +20,19 @@ class Porthistory extends Component {
               <li>1935: Commercial fishing with nets banned on the Rogue River.</li>
             </ul>
           </article>
-        </section>
-        <section>
           <article>
-            Established in 1955, the Gold Beach Port District has grown to own and manage a diverse portfolio of
-            interests in the Gold Beach area. The original Cannery Building was constructed by Jerry Hull in 1968. The
-            building was constructed when the ocean troll salmon fishing off the mouth of the Rogue River was at
-            it&#39;s peak. In 1974, with the addition of a shrimp and crab fishery, the two story full scale seafood
-            processing plant was constructed. The plant contained shrimp, crab, and salmon processing equipment. Between
-            1974 and 1984 the facility changed hands 3 times. From 1986 until the present decreases in non-tribal troll
-            fisheries had a negative effect on the plant&#39;s ability to operate profitably. In 1991 the cannery
-            facility was sub-leased for sea urchin processing. With the need to diversify from the fishing industry the
-            Port decided to renovate the Cannery. In March 1998 the doors opened to the newly renovated cannery
-            building. Port interests now include the port, the airport, and Huntley Park.
+            <p>
+              Established in 1955, the Gold Beach Port District has grown to own and manage a diverse portfolio of
+              interests in the Gold Beach area. The original Cannery Building was constructed by Jerry Hull in 1968. The
+              building was constructed when the ocean troll salmon fishing off the mouth of the Rogue River was at
+              it&#39;s peak. In 1974, with the addition of a shrimp and crab fishery, the two story full scale seafood
+              processing plant was constructed. The plant contained shrimp, crab, and salmon processing equipment.
+              Between 1974 and 1984 the facility changed hands 3 times. From 1986 until the present decreases in
+              non-tribal troll fisheries had a negative effect on the plant&#39;s ability to operate profitably. In 1991
+              the cannery facility was sub-leased for sea urchin processing. With the need to diversify from the fishing
+              industry the Port decided to renovate the Cannery. In March 1998 the doors opened to the newly renovated
+              cannery building. Port interests now include the port, the airport, and Huntley Park.
+            </p>
             <p className="pageTitleImage">
               <img
                 className="pageTitleImage"
