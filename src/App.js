@@ -29,7 +29,7 @@ import Blanksecondheader from './components/headerComponents/blankSecondHeader';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={'/~jduncan128/webproject/'}>
         <div className="App">
           <Header />
           <Switch>
@@ -47,7 +47,7 @@ class App extends Component {
           <Route exact path="/Port_Business/Resolutions" component={Resolutions} />
           <Route exact path="/Port_Business/Strategic_Plan" component={Strategicplan} />
           <Route exact path="/Port" component={Port} />
-          <Route exact path="/Port/History" component={Porthistory} />
+          <Route exact path="/History" component={Porthistory} />
           <Route exact path="/Port/Commercial_Facilities" component={Commercialfacilities} />
           <Route exact path="/Port/Mission" component={Portmission} />
           <Route exact path="/Port/Services" component={Portservices} />

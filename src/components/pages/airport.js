@@ -5,8 +5,8 @@ class Airport extends Component {
     return (
       <div id="wrapper">
         <section id="contentstart">
-          <h1>Airport</h1>
           <article>
+            <h2>Airport</h2>
             <p>
               One of the most beautiful airports on the entire west coast, the Gold Beach Airport is located just south
               of the mouth of the Rogue River. The airport is managed by the Port of Gold Beach. Terminal and fuel hours
@@ -16,6 +16,19 @@ class Airport extends Component {
               Both restaurants and lodging are easily within walking distance. Ride upriver on Jerry&#36;s Rogue Jets to
               experience the Rogue River at it&#36;s fullest. The Rogue River is rich with thrills and wildlife and the
               upriver jet boats are the best way to see it all - short of hiking or rafting/kayaking the river.
+            </p>
+
+            <p className="airportVideo">
+              <iframe
+                name="youtubeIframe"
+                title="airport video"
+                width="854"
+                height="480"
+                src="https://www.youtube.com/embed/0pXsxz1W6gU"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+              />
             </p>
           </article>
         </section>

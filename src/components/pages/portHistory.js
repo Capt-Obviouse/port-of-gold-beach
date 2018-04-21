@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import AirportView from '../../Assets/img/port_overview.jpg';
 
 class Porthistory extends Component {
   render() {
     return (
       <div id="wrapper">
         <section id="contentstart">
-          <h2>History of the Port of Gold Beach</h2>
           <article>
+            <h2>History of the Port of Gold Beach</h2>
             <ul>
               <li>6,600 B.C.: The earliest record of human habitation at the mouth of the Rogue River.</li>
               <li>1542-43: The earliest approaches to the Southern Oregon Coast by the Spanish.</li>
@@ -32,6 +33,13 @@ class Porthistory extends Component {
             facility was sub-leased for sea urchin processing. With the need to diversify from the fishing industry the
             Port decided to renovate the Cannery. In March 1998 the doors opened to the newly renovated cannery
             building. Port interests now include the port, the airport, and Huntley Park.
+            <p className="pageTitleImage">
+              <img
+                className="pageTitleImage"
+                src={AirportView}
+                alt="Aerial view of the Port of Gold Beach and Airport"
+              />
+            </p>
           </article>
         </section>
       </div>
