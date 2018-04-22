@@ -24,6 +24,23 @@ class Header extends Component {
         break;
     }
   }
+  menuScrollToggle() {
+    const NavID = document.getElementsByClassName('mainNavItem');
+    const PortID = document.getElementsByClassName('subNav-Mobile port');
+    const PortBusinessSubNavID = document.getElementsByClassName('subNav-Mobile port-business');
+    const menuToScroll = document.getElementById('menuScroll');
+    const isActive = false;
+    console.log('menuScroll Fired');
+    if (
+      NavID[0].classList.contains('active') ||
+      PortID[0].classList.contains('active') ||
+      PortBusinessSubNavID[0].classList.contains('active')
+    ) {
+      menuToScroll.classList.add('active');
+    } else {
+      menuToScroll.classList.remove('active');
+    }
+  }
   menuToggle(action) {
     const NavID = document.getElementsByClassName('mainNavItem');
     const PortID = document.getElementsByClassName('subNav-Mobile port');
@@ -37,48 +54,60 @@ class Header extends Component {
       this.mainNavToggle('close');
       this.portNavToggle('close');
       this.portBusinessNavToggle('close');
+      this.menuScrollToggle();
     } else {
       this.mainNavToggle('open');
+      this.menuScrollToggle();
     }
   }
   portNavToggle(action) {
     const PortSubNavID = document.getElementsByClassName('subNav-Mobile port');
+    const menuToScroll = document.getElementById('menuScroll');
+
     switch (action) {
       case 'open':
         for (var i = 0; i < PortSubNavID.length; i++) {
           PortSubNavID[i].classList.add('active');
+          this.menuScrollToggle();
         }
         break;
 
       case 'close':
         for (i = 0; i < PortSubNavID.length; i++) {
           PortSubNavID[i].classList.remove('active');
+          this.menuScrollToggle();
         }
         break;
       default:
         for (i = 0; i < PortSubNavID.length; i++) {
           PortSubNavID[i].classList.toggle('active');
+          this.menuScrollToggle();
         }
         break;
     }
   }
   portBusinessNavToggle(action) {
     const PortBusinessSubNavID = document.getElementsByClassName('subNav-Mobile port-business');
+    const menuToScroll = document.getElementById('menuScroll');
+
     switch (action) {
       case 'open':
         for (var i = 0; i < PortBusinessSubNavID.length; i++) {
           PortBusinessSubNavID[i].classList.add('active');
+          menuToScroll.classList.add('active');
         }
         break;
 
       case 'close':
         for (i = 0; i < PortBusinessSubNavID.length; i++) {
           PortBusinessSubNavID[i].classList.remove('active');
+          menuToScroll.classList.remove('active');
         }
         break;
       default:
         for (i = 0; i < PortBusinessSubNavID.length; i++) {
           PortBusinessSubNavID[i].classList.toggle('active');
+          menuToScroll.classList.toggle('active');
         }
         break;
     }
@@ -88,13 +117,16 @@ class Header extends Component {
       case 'port':
         this.portNavToggle();
         this.mainNavToggle();
+        this.menuScrollToggle();
         break;
       case 'port-business':
         this.portBusinessNavToggle();
         this.mainNavToggle();
+        this.menuScrollToggle();
         break;
       default: {
         this.mainNavToggle();
+        this.menuScrollToggle();
         break;
       }
     }
@@ -102,7 +134,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header>
+      <header id="menuScroll">
         <p className="skipnavigation">
           <a href="#contentstart">Skip Navigation</a>
         </p>

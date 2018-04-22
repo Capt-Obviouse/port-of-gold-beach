@@ -27,7 +27,7 @@ class Strategicplan extends Component {
               dynamic, rather than static, document, subject to revision as needs and circumstances dictate. The Board
               of Commissioners for the Port of Gold Beach reserves the absolute right to add to, subtract from, revise
               or otherwise modify, or entirely abandon this Strategic Business Plan as the Board works to fulfill its
-              stewardship and governance obligations.{' '}
+              stewardship and governance obligations.
             </p>
           </article>
         </section>
