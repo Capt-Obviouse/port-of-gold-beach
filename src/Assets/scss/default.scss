@@ -1,32 +1,353 @@
 // default.scss
 
-@import 'reset';
-@import 'config';
-@import 'mobile';
+/********************************************************************************
+*
+*
+*
+* Variables
+*
+*
+*
+********************************************************************************/
+$font-stack: 'Roboto', sans-serif;
+$special-font: 'Roboto Condensed', sans-serif;
+$primary-link-font: 'Roboto Condensed', sans-serif;
+$secondary-link-font: 'Roboto', sans-serif;
+$primary-color: black;
+$header-height: 4em;
+$port-gold: gold;
+$header-bg-color: #2686bf; //rgba(38, 134, 191, 1); ;
 
-/**************** Tablet 768 px ***********/
+/********************************************************************************
+*
+*
+*
+* Mixins
+*
+*
+*
+********************************************************************************/
+@mixin translateY($e) {
+  -webkit-transform: translateY($e);
+  -moz-transform: translateY($e);
+  transform: translateY($e);
+}
+
+@mixin transition($e) {
+  -webkit-transition: $e;
+  -moz-transition: $e;
+  transition: $e;
+}
+
+/********************************************************************************
+*
+* Reset Styles - Base/Mobile
+*
+********************************************************************************/
+html,
+body,
+ol,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/********************************************************************************
+*
+* HTML and BODY - Base/Mobile
+*
+********************************************************************************/
+html {
+  height: 100%;
+} // html
+body {
+  position: relative;
+  font-family: $font-stack;
+  color: $primary-color;
+  min-height: 100%;
+  overflow-y: auto;
+} // body
+h1 {
+  font-family: 'Alegreya', serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 23px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 23px 0;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
+}
+a,
+:visited,
+:link {
+  text-decoration: none;
+  @include transition(0.4s ease-in-out);
+  cursor: pointer;
+  font-family: $secondary-link-font;
+} // a, visted, link
+
+/********************************************************************************
+*
+* Header / Navigation - Base/Mobile
+*
+********************************************************************************/
+
+header {
+  align-items: center;
+  background-color: $header-bg-color;
+  background: linear-gradient(#1a567a, #2b9ee2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  height: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &.active {
+    height: auto;
+    max-height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  } // active
+  p {
+    display: none;
+    img {
+      width: auto;
+      height: 6em;
+    } // img
+  } // p
+  nav {
+    display: inline;
+    width: 100%;
+    ul {
+      width: 100%;
+      text-align: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        //background-color: $header-bg-color;
+        width: 100%;
+        height: 3.5em;
+        line-height: 3.5em;
+        display: none;
+        border-top: 1px solid #555;
+
+        &#nav-menu-button {
+          display: inline-block;
+          height: auto;
+        } // nav-menu-button
+        a,
+        :visited,
+        :link {
+          color: white;
+          text-decoration: none;
+          @include transition(0.4s ease-in-out);
+          cursor: pointer;
+          font-family: $primary-link-font;
+        } // a, visted, link
+        a:hover {
+          color: $port-gold;
+          @include transition(0.4s ease-in-out);
+        } // a:hover
+        &.active {
+          display: inline-block;
+        } // active
+        div.nav-icon-wrapper {
+          padding: 0.25em 0;
+          height: 2em;
+          width: 100%;
+          background-color: gold;
+          border-bottom: 1px solid black;
+          display: flex;
+          justify-content: center;
+        } // nav-icon-wrapper
+        span {
+          position: absolute;
+          right: 10%;
+          font-size: 125%;
+        } // span
+      } // li
+    } // ul
+  } // nav
+  div.nav-icon {
+    background-image: url('../img/menu-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2em;
+    height: 2em;
+  } // div.nav-icon
+} // header
+#secondNav {
+  display: none;
+} // secondNav
+
+/********************************************************************************
+*
+* Main Content - Base/Mobile
+*
+********************************************************************************/
+#wrapper {
+  padding-top: $header-height + 4em;
+  padding-bottom: 6em;
+  section {
+    padding: 0 5% 2%;
+    article {
+      &#landing {
+        display: none;
+      } // landing
+      .form {
+        p {
+          min-width: 100%;
+          padding-bottom: 1em;
+        } // p
+
+        input,
+        textarea {
+          width: 50%;
+          border: 1px solid black;
+        } // input,textarea
+      } // form
+    } // article
+  } // section
+  button {
+    background-color: gold;
+  } // button
+  .errorPannel {
+    background-color: red;
+  } // errorPanel
+  table {
+    tr:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0.05);
+    } // tr:nth-child(even)
+    th,
+    td {
+      text-align: left;
+      width: 20%;
+      &:first-child {
+        width: 25%;
+      } // first-child
+    } // th, td
+  } // table
+} // wrapper
+.pageTitleImage {
+  text-align: center;
+  img {
+    width: 100%;
+    height: auto;
+  } // img
+} // pageTitleImage
+.airportVideo {
+  text-align: center;
+  iframe {
+    width: 100%;
+  } // iframe
+} // airportVideo
+label {
+  min-width: 100%;
+} // label
+/********************************************************************************
+*
+*
+*
+* Mobile Portrait - Media Query
+*
+*
+*
+********************************************************************************/
+@media only screen and (max-width: 768px) and (min-height: 500px) {
+  header {
+    height: auto;
+    h1 {
+    } // h1
+    p {
+      &.logo {
+        padding: 0;
+        margin: 0;
+      } // logo
+      display: block;
+      text-align: center;
+    } // p
+    nav {
+      min-height: auto;
+      display: inline;
+    } // nav
+  } // header
+  /********************************************************************************
+  *
+  * Main Content - Mobile Portrait
+  *
+  ********************************************************************************/
+  #wrapper {
+    padding-top: $header-height + 12em;
+  } // wrapper
+}
+
+/********************************************************************************
+*
+*
+*
+* Tablet 768px - Media Query
+*
+*
+*
+********************************************************************************/
 @media only screen and (min-width: 768px) {
 }
 
-/**************** Medium Device 993px***********/
+/********************************************************************************
+*
+*
+*
+* Medium Device 993px - Media Query
+*
+*
+*
+********************************************************************************/
 @media only screen and (min-width: 993px) {
   header {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     height: $header-height;
+    &.active {
+      height: $header-height;
+      max-height: $header-height;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+    } // active
     p {
       width: auto;
+      display: block;
+      margin: 0;
+      padding: 0;
       img {
         padding: 0 1em;
         width: auto;
         height: $header-height;
-      }
-    }
+      } // img
+    } // p
     nav {
       position: absolute;
       right: 1em;
       min-height: $header-height;
+      width: auto;
       ul {
         margin: 0;
         padding: 0;
@@ -40,19 +361,19 @@
           line-height: $header-height;
           span {
             display: none;
-          }
+          } // span
           &#nav-menu-button {
             display: none;
-          }
+          } // nav-menu-button
           div.nav-icon-wrapper {
             display: none;
-          }
+          } // nav-icon-wrapper
           &.subNav-Mobile {
             display: none;
-          }
-        }
-      }
-    }
+          } // subNav-Mobile
+        } // li
+      } // ul
+    } // nav
   }
   #secondNav {
     background-color: $port-gold;
@@ -67,6 +388,8 @@
     justify-content: flex-end;
     box-shadow: 0 5px 30px #222;
     position: fixed;
+    top: 0;
+    left: 0;
     ul {
       li {
         display: inline-block;
@@ -77,20 +400,24 @@
           color: black;
           text-decoration: none;
           font-weight: bold;
-        }
+          font-family: $secondary-link-font;
+        } // a:link, a:visited
         a:hover {
-          color: white;
-        }
-      }
-    }
-  }
-  /*     Main Content      */
+          color: #777;
+        } // hover
+      } // li
+    } // ul
+  } // secondNav
+  /********************************************************************************
+  *
+  * Main Content - Medium Device 993px
+  *
+  ********************************************************************************/
   #wrapper {
     padding-top: $header-height;
-
     h2 {
       padding-top: 5em;
-    }
+    } // h2
 
     section {
       display: flex;
@@ -108,33 +435,36 @@
             margin: 0;
             padding-top: 0;
             font-size: 1.25em;
-          }
-        }
+          } // h2
+        } // col-3
 
         &.col-2 {
           width: 45%;
           margin: 0 auto;
           h2 {
             font-size: 1.25em;
-          }
-        }
+          } // h2
+        } // col-2
         &#landing {
           width: 100vw;
-          height: 90vh;
+          height: 60vh;
           padding: 0;
           margin: 0;
+          margin-top: 3em;
           display: inline-block;
+          background: url('../img/GB1.jpg') no-repeat bottom;
+          background-size: cover;
           img {
             width: 100vw;
-            height: 90vh;
-          }
-        }
+            height: auto;
+          } // img
+        } // landing
         &.contact {
           p:not(first-child) {
             padding: 0;
             margin: 0;
-          }
-        }
+          } // p:not(first-child)
+        } // contact
         &.contactForm {
           padding-left: 2em;
           margin: 0;
@@ -143,20 +473,37 @@
             min-width: 100%;
             padding: 0;
             padding-bottom: 0.05em;
-          }
+          } // p
           input,
           textarea {
             width: 25%;
             border: 1px solid black;
-          }
+          } // input, textarea
           textarea {
             width: 100%;
             height: 10em;
-          }
-        }
-      } // end article
-    } // end section
-  } // end wrapper
+          } // textarea
+        } // contactForm
+      } // article
+    } // section
+    table {
+      margin: 2em 0;
+      width: 100%;
+      tr:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.05);
+      } // table
+      th,
+      td {
+        text-align: left;
+        padding-right: 15em;
+        width: 50%;
+        &:first-child {
+          width: 35%;
+        } // firs-child
+      } // th, td
+    } // table
+  } // wrapper
+
   &.pageTitleImage {
     text-align: center;
     img {
@@ -170,16 +517,29 @@
       width: 50%;
     }
   }
-  label {
-    min-width: 100%;
-  }
 } // End device 993 - 1200
 
-/**************** Tablet greater than 1201px ***********/
+/********************************************************************************
+*
+*
+*
+* Screen greater than 1201px - Media Query
+*
+*
+*
+********************************************************************************/
 @media only screen and (min-width: 1201px) {
 }
 
-/**************** Skip navigation ****************/
+/********************************************************************************
+*
+*
+*
+* Footer
+*
+*
+*
+********************************************************************************/
 footer {
   height: 6em;
   position: absolute;
@@ -193,7 +553,15 @@ footer {
     margin: 0;
   }
 }
-/**************** Skip navigation ****************/
+/********************************************************************************
+*
+*
+*
+* Skip Navigation
+*
+*
+*
+********************************************************************************/
 
 p.skipnavigation a {
   position: absolute;
@@ -208,7 +576,15 @@ p.skipnavigation a:focus {
   color: #000;
   z-index: 100;
 }
-/**************** print styles ****************/
+/********************************************************************************
+*
+*
+*
+* Print Styles
+*
+*
+*
+********************************************************************************/
 
 @media print {
   article {
