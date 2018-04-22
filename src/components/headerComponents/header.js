@@ -29,8 +29,6 @@ class Header extends Component {
     const PortID = document.getElementsByClassName('subNav-Mobile port');
     const PortBusinessSubNavID = document.getElementsByClassName('subNav-Mobile port-business');
     const menuToScroll = document.getElementById('menuScroll');
-    const isActive = false;
-    console.log('menuScroll Fired');
     if (
       NavID[0].classList.contains('active') ||
       PortID[0].classList.contains('active') ||
@@ -62,7 +60,6 @@ class Header extends Component {
   }
   portNavToggle(action) {
     const PortSubNavID = document.getElementsByClassName('subNav-Mobile port');
-    const menuToScroll = document.getElementById('menuScroll');
 
     switch (action) {
       case 'open':
@@ -139,10 +136,10 @@ class Header extends Component {
           <a href="#contentstart">Skip Navigation</a>
         </p>
 
-        <p>
+        <p className="logo">
           <img src={require('../../Assets/img/port_logo_2.png')} alt="Port of Gold Beach Logo" />
         </p>
-        <p>Port of Gold Beach</p>
+        <h1 className="logoTitle">Port of Gold Beach</h1>
         <nav id="mainNav">
           <ul>
             <li className="mainNavItem">
@@ -260,9 +257,7 @@ class Header extends Component {
             <li id="nav-menu-button">
               <a onClick={this.menuToggle.bind(this)}>
                 <div className="nav-icon-wrapper">
-                  <div className="nav-icon"> </div>
-                  <div className="nav-icon"> </div>
-                  <div className="nav-icon"> </div>
+                  <div className="nav-icon">&nbsp;</div>
                 </div>
               </a>
             </li>
