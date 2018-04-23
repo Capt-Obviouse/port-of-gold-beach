@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import PortSunset from '../../Assets/img/port_sunset.jpg';
+import PortSunset from '../../Assets/img/port_sunset_l.jpg';
+import PortSunsetMedium from '../../Assets/img/port_sunset_m.jpg';
+import PortSunsetSmall from '../../Assets/img/port_sunset_s.jpg';
 class Port extends Component {
   render() {
     return (
@@ -14,7 +16,12 @@ class Port extends Component {
               fish buyers, sellers, and processing.
             </p>
             <p className="pageTitleImage">
-              <img className="pageTitleImage" src={PortSunset} alt="Port of Gold Beach docks in the sunset" />
+              <img
+                className="pageTitleImage"
+                src={PortSunsetSmall}
+                srcSet={PortSunsetMedium + ' 700w, ' + PortSunset + ' 1920w'}
+                alt="Port of Gold Beach docks in the sunset"
+              />
             </p>
           </article>
         </section>

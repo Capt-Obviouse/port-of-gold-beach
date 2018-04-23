@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import AirportView from '../../Assets/img/port_overview.jpg';
+import AirportView from '../../Assets/img/port_overview_l.jpg';
+import AirportViewMedium from '../../Assets/img/port_overview_m.jpg';
+import AirportViewSmall from '../../Assets/img/port_overview_s.jpg';
 
 class Porthistory extends Component {
   render() {
@@ -36,7 +38,8 @@ class Porthistory extends Component {
             <p className="pageTitleImage">
               <img
                 className="pageTitleImage"
-                src={AirportView}
+                src={AirportViewSmall}
+                srcSet={AirportViewMedium + ' 700w, ' + AirportView + ' 1920w'}
                 alt="Aerial view of the Port of Gold Beach and Airport"
               />
             </p>
