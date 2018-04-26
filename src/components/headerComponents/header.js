@@ -213,12 +213,12 @@ class Header extends Component {
               </span>
             </li>
             <li className="subNav-Mobile port-business">
-              <Link to="/Port_Business" onClick={this.menuToggle.bind(this)}>
-                Port Business
-              </Link>
               <span className="port-business">
                 <a onClick={this.NavToggle.bind(this, 'port-business')}>-</a>
               </span>
+              <Link to="/Port_Business" onClick={this.menuToggle.bind(this)}>
+                Port Business
+              </Link>
             </li>
             <li className="subNav-Mobile port-business">
               <Link to="/Port_Business/Ordinance" onClick={this.menuToggle.bind(this)}>
