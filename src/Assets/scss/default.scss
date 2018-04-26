@@ -92,7 +92,6 @@ a,
 :visited,
 :link {
   display: inline-block;
-
   text-decoration: none;
   @include transition(0.4s ease-in-out);
   cursor: pointer;
