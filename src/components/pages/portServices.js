@@ -10,16 +10,15 @@ class Portservices extends Component {
             <p>The Port of Gold Beach Staff is available to assist you when needed. Services and equipment include:</p>
             <ul>
               <li>
-                <Link to="/Port/Storage">Storage</Link>
+                <Link to="/Port/Rental_Cars">Rental Cars</Link>
               </li>
               <li>
-                <Link to="/Port/Rental_Cars">Rental Cars</Link>
+                <Link to="/Port/Storage">Storage</Link>
               </li>
               <li> Marine Fuel</li>
               <li> Forklift</li>
             </ul>
             <p>
-              {' '}
               <Link to="/Contact">Contact</Link> the Port Office to arrange for services and/or equipment.
             </p>
           </article>
