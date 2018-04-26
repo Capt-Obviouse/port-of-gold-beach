@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import navIcon from '../../Assets/img/menu-icon.png';
 
 class Header extends Component {
   mainNavToggle(navAction) {
@@ -256,9 +257,7 @@ class Header extends Component {
             </li>
             <li id="nav-menu-button">
               <a onClick={this.menuToggle.bind(this)}>
-                <div className="nav-icon-wrapper">
-                  <div className="nav-icon">&nbsp;</div>
-                </div>
+                <img src={navIcon} alt="Navigation Menu Icon" />
               </a>
             </li>
           </ul>
