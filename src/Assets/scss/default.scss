@@ -560,11 +560,24 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   p {
     text-align: center;
     width: 100%;
     padding: 1em 0;
     margin: 0;
+  }
+  .footer-links {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-links li {
+    margin: 0;
+    padding: 0 2%;
+    display: inline-block;
+    width: 25%;
   }
 }
 /********************************************************************************
