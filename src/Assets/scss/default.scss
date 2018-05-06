@@ -262,6 +262,19 @@ header {
 label {
   min-width: 100%;
 } // label
+
+.documentation {
+  padding-left: 2em;
+}
+.documentation-page {
+  text-decoration: underline;
+}
+ul.discussion {
+  list-style-type: none;
+}
+ul.discussion li {
+  padding-bottom: 2em;
+}
 /********************************************************************************
 *
 *
