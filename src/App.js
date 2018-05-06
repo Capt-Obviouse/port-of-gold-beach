@@ -26,6 +26,7 @@ import Portheader from './components/headerComponents/portHeader';
 import Portbusinessheader from './components/headerComponents/portBusinessHeader';
 import Blanksecondheader from './components/headerComponents/blankSecondHeader';
 import Rentalcars from './components/pages/rentalCars';
+import Documentation from './components/pages/documentation';
 
 class App extends Component {
   render() {
@@ -58,6 +59,7 @@ class App extends Component {
           <Route exact path="/Contact" component={Contact} />
           <Route exact path="/Airport" component={Airport} />
           <Route exact path="/Sitemap" component={Sitemap} />
+          <Route exact path="/Documentation" component={Documentation} />
           <Footer />
         </div>
       </Router>

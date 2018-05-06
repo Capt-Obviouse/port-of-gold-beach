@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://bobbi.ivytech.edu/~jduncan128/webproject/",
   "dependencies": {
-    "gulp": "^3.9.1",
     "gulp-changed": "^3.2.0",
     "gulp-clean-css": "^3.9.3",
     "gulp-rename": "^1.2.2",
@@ -20,5 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }

@@ -16,6 +16,14 @@ class Footer extends Component {
         <p>
           <Link to="/Sitemap">Sitemap</Link>
         </p>
+        <p>
+          <a href="https://bobbi.ivytech.edu/~jduncan128/project_plan/" target="_blank">
+            Project Plan
+          </a>
+        </p>
+        <p>
+          <Link to="/Documentation">Documentation</Link>
+        </p>
         <p>Copyright &#169; {this.currentYear()} Port of Gold Beach</p>
       </footer>
     );
