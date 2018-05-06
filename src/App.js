@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
 
 import './Assets/css/default.min.css';
 import Header from './components/headerComponents/header';
@@ -27,12 +27,13 @@ import Portbusinessheader from './components/headerComponents/portBusinessHeader
 import Blanksecondheader from './components/headerComponents/blankSecondHeader';
 import Rentalcars from './components/pages/rentalCars';
 import Documentation from './components/pages/documentation';
-
+import ScrollToTop from './components/pages/ScrollToTop';
 class App extends Component {
   render() {
     return (
       <Router basename={'/~jduncan128/webproject/'}>
         <div className="App">
+         <ScrollToTop />
           <Header />
           <Switch>
             <Route exact path="/port_business*" component={Portbusinessheader} />
