@@ -5,6 +5,7 @@ $nav-height: 10em;
 body,
 ul,
 li,
+p,
 header {
   padding: 0;
   margin: 0;
@@ -64,6 +65,7 @@ header {
   }
 }
 /* Main Styles */
+
 body {
   font-family: sans-serif;
   height: 100%;
@@ -76,18 +78,35 @@ body {
   min-height: 100vh;
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   background-image: url(../img/homeBG.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   p {
-    text-align: left;
+    width: 100%;
   }
-  #searchBox {
-    border: 1px solid black;
-    width: 15em;
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  label {
+    text-align: left;
+    font-style: italic;
+  }
+  span {
+    min-width: 100%;
+    text-align: left;
+
+    #searchBox {
+      border: 1px solid black;
+      width: 25em;
+      height: 2.5em;
+      background-color: rgba(255, 255, 255, 0.75);
+    }
   }
 }
