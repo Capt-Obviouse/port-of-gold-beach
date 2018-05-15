@@ -1,0 +1,93 @@
+$nav-height: 10em;
+
+/*  Reset Styles */
+
+body,
+ul,
+li,
+header {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header and Nav */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $nav-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  p {
+    text-align: left;
+    padding: 0 5em 0 5em;
+    width: auto;
+  }
+  nav {
+    width: auto;
+    padding: 0 5em 0 5em;
+    li {
+      display: inline-block;
+      list-style-type: none;
+      padding: 0 2.5em 0 2.5em;
+    }
+  }
+
+  .subNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    color: #777;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    ul {
+      text-align: right;
+      width: auto;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    li {
+      display: inline-block;
+      list-style-type: none;
+      padding: 0 1em 0 1em;
+    }
+  }
+}
+/* Main Styles */
+body {
+  font-family: sans-serif;
+  height: 100%;
+  max-width: 100%;
+}
+.App {
+}
+.homeSearch {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/homeBG.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  p {
+    text-align: left;
+  }
+  #searchBox {
+    border: 1px solid black;
+    width: 15em;
+  }
+}
